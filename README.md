@@ -19,11 +19,13 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
     - 'title.basics.tsv' and 'title.ratings.tsv'to obtain the ratings and the number of votes for the movies;
 - [Wikidata dataset](https://www.wikidata.org/): as we are also including the budgets of the movies to complement and make more sense of the revenues, the Wikidata dataset is used.
 
-## Methods: 
-
-1. 
-
-2. 
+## Methods:
+1. Data pre-processing;
+2. Preliminary analysis on the datasets;
+3. Definition of star score;
+4. Investigation of movies success dependence on actors trough regression analysis;
+5. Prediction of future movies success based on regression model;
+6. Investigation of movies success dependence on directors and writers and comparison with actors.
 
 ## Proposed Timeline:
 
