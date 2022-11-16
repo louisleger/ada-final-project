@@ -11,14 +11,17 @@ This project revolves around using the MCU database, as well as supporting infor
 ## Research Questions:
 
 - How much does the choice of actor impact movie success?
-i) Is the 'star score' a significant metric to assess an actor influence of the success of a movie?
-- Are there any gender biases in the choice of actors?
-- How does the star score of an actor evolve over time?
+    - Is the 'star score' a significant metric to assess an actor influence of the success of a movie?
+i Are there any gender biases in the choice of actors?
+How does the star score of an actor evolve over time?
 - What will be the success of future movies based on the selected actors?
 - Are there similarities between the actors' and directors' influence on movies?
 
 ## Additional Datasets:
 
+- Inflation correction dataset (https://liberalarts.oregonstate.edu/spp/polisci/faculty-staff/robert-sahr/inflation-conversion-factors-years-1774-estimated-2024-dollars-recent-years/individual-year-conversion-factor-table-0);
+- IMDb dataset (https://datasets.imdbws.com/);
+- 
 
 With regards to the additional data sets used, we firstly needed to utilize IMDb movie scores as an additional metric for the measurement of movie success. For that we used title.basics.tsv and title.ratings.tsv from https://datasets.imdbws.com/ to obtain the ratings and the number of votes for the movies. As we also wanted to find the budgets of the movies to complement and make more sense of the revenues, the data was obtained from https://www.wikidata.org/ was used. Wikidata was also used to identify the ethnicities of the actors in the MCU dataset due to the fact that they were linked to Freebase IDs and Freebase is no longer in service.
 
