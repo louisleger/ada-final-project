@@ -1,3 +1,4 @@
-/data/*
 /.ipynb_checkpoints
 .DS_Store
+imdb_movie_info.tsv
+imdb_movie_ratings.tsv
