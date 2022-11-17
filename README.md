@@ -14,23 +14,41 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
     - Are there similarities between the actors' and directors' influence on movies?
 
 ## Additional Datasets:
-**1.** [Inflation conversion factor dataset](https://liberalarts.oregonstate.edu/spp/polisci/faculty-staff/robert-sahr/inflation-conversion-factors-years-1774-estimated-2024-dollars-recent-years/individual-year-conversion-factor-table-0): dataset with the yearly inflation correction factor based on the average of inflation estimates by the Office of Management and Budget (OMB) and the Congressional Budget Office (CBO);
-**2.** [IMDb dataset](https://datasets.imdbws.com/): dataset with IMDb movie ratings as an additional metric for the measurement of movie success. We use:
+1. [Inflation conversion factor dataset](https://liberalarts.oregonstate.edu/spp/polisci/faculty-staff/robert-sahr/inflation-conversion-factors-years-1774-estimated-2024-dollars-recent-years/individual-year-conversion-factor-table-0): dataset with the yearly inflation correction factor based on the average of inflation estimates by the Office of Management and Budget (OMB) and the Congressional Budget Office (CBO);
+2. [IMDb dataset](https://datasets.imdbws.com/): dataset with IMDb movie ratings as an additional metric for the measurement of movie success. We use:
     - 'title.basics.tsv' and 'title.ratings.tsv'to obtain the ratings and the number of votes for the movies;
-**3.** [Wikidata dataset](https://www.wikidata.org/): as we are also including the budgets of the movies to complement and make more sense of the revenues, the Wikidata dataset is used.
+3. [Wikidata dataset](https://www.wikidata.org/): as we are also including the budgets of the movies to complement and make more sense of the revenues, the Wikidata dataset is used with the queries being carried out using SPARQL, the results of the query can be found in the Wikidata_query.json file.
 
 ## Methods:
-**1. Data pre-processing**;
-**2. Preliminary analysis on the datasets**;
-**3. Definition of star score**;
-**4. Investigation of movies success dependence on actors trough regression analysis**;
-**5. Prediction of future movies success based on regression model**;
-**6. Investigation of movies success dependence on directors and writers and comparison with actors**.
+1. **Data pre-processing**
+    - The Data_Cleaning.ipynb file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. The output is a CSV file with all the relevant information needed as can be seen in the following table:
+2.**Preliminary analysis on the datasets**
+    - A preliminary analysis was initially done on a single actor in this case Leonardo DiCaprio, to look into the viability and the completeness of the dataset for the purpose we intended to see. For that a look was taken at hoq the number of appearances and 
+3. Definition of star score**
+    - The star score will be built on revenues and IMDb scores of the actors. This will be done through using the average logarithm of the profits (Revenue-budget)SHOULD WE MAYBE USE RELATIVE PROFIT (rEVENUE-bUDGET)/BUDGET up to the actor's last appearance, and the average of the logarithm of the scores. This is done due to the heavy-tailed nature of both the revenues and the scores. The IMDb scores are also scaled by the number of votes as that is an important potential confounder to take into account when using scores (This is done through a min-max scaling of the logarithem of the votes). This will in a similar manner be done to the directors as well.
+4. **Investigation of movies success dependence on actors trough regression analysis**;
+5. **Prediction of future movies success based on regression model**;
+6. **Investigation of movies success dependence on directors and writers and comparison with actors**.
 
 ## Proposed Timeline:
 
 Week 9: Submission of milestone 2: End the preliminary analysis of the data along with tests of the methods mentioned above on a small sample from the databases.
 
-Week 10: Expansion of the analysis to the complete dataset
+Week 10: Expansion of the analysis to the complete dataset of actors
+
+Week 11: Starting a draft of the full data story, and the begining of the development of the web interface
+
+Week 12: Building a predictive model involving actor gender and number of appearances
+
+Week 13: Applying prior assesment to directors
+
+Week 14: Submission of milestone 3
 
 ## Organization Within the Team:
+
+| Team Member | Task |
+| --- | ----------- |
+| Gabriele Furlan | Text |
+| Isaac Battles | Text |
+| Louise | Text |
+| Nawar Allabban | Text |
