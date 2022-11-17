@@ -23,6 +23,8 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
     - 'title.basics.tsv' and 'title.ratings.tsv'to obtain the ratings and the number of votes for the movies;
 3. [Wikidata dataset](https://www.wikidata.org/): as we are also including the budgets of the movies to complement and make more sense of the revenues, the Wikidata dataset is used with the queries being carried out using SPARQL, the results of the query can be found in the Wikidata_query.json file.
 
+3.[The Movies Dataset - Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset): Budgets data was obtained from "The Movies Dataset" available on kaggle which should allow for the elimination of a possible confounder with revenues
+
 ## Methods:
 1. **Data pre-processing**
     - The Data_Cleaning.ipynb file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. The output is a CSV file with all the relevant information needed as can be seen in the following table:
