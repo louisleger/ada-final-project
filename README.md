@@ -30,7 +30,8 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 2. **Preliminary analysis on the datasets**
     - A preliminary analysis is done on single actors to look into the viability and the completeness of the dataset for the purpose we intended to see and to investigate the correlation between different parameters.
 <p align="center">
-    <img width="332" alt="correlation" src="https://user-images.githubusercontent.com/114060781/202557174-c2285c47-d3a9-4cea-b779-266f3b438f05.png">
+    <img width="323" alt="correlation" src="https://user-images.githubusercontent.com/114060781/202558137-0983da07-5662-44a3-ae2b-bacb93483c15.png">
+
     
 3. **Definition of star score**
     - The star score will be built on revenues and IMDb scores of the actors. This will be done through using the average logarithm of the profits (Revenue-budget)SHOULD WE MAYBE USE RELATIVE PROFIT (rEVENUE-bUDGET)/BUDGET up to the actor's last appearance, and the average of the logarithm of the scores. This is done due to the heavy-tailed nature of both the revenues and the ratings. The IMDb scores are also normalized by the number of votes as that is an important potential confounder to take into account when using scores (This is done through a min-max scaling of the logarithem of the votes). This will in a similar manner be done to the directors as well.
