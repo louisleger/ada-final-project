@@ -22,8 +22,7 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 2. [IMDb dataset](https://datasets.imdbws.com/): dataset with IMDb movie ratings as an additional metric for the measurement of movie success. We use:
     - 'title.basics.tsv' and 'title.ratings.tsv'to obtain the ratings and the number of votes for the movies;
 3. [Wikidata dataset](https://www.wikidata.org/): as we are also including the budgets of the movies to complement and make more sense of the revenues, the Wikidata dataset is used with the queries being carried out using SPARQL, the results of the query can be found in the Wikidata_query.json file.
-
-3.[The Movies Dataset - Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset): Budgets data was obtained from "The Movies Dataset" available on kaggle which should allow for the elimination of a possible confounder with revenues
+4.[The Movies Dataset - Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset): Budgets data was obtained from "The Movies Dataset" available on kaggle which should allow for the elimination of a possible confounder with revenues
 
 ## Methods:
 1. **Data pre-processing**
