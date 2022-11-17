@@ -30,7 +30,7 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 2. **Preliminary analysis on the datasets**
     - A preliminary analysis is done on single actors to look into the viability and the completeness of the dataset for the purpose we intended to see and to investigate the correlation between different parameters.
 <p align="center">
-    <img width="323" alt="correlation" src="https://user-images.githubusercontent.com/114060781/202558137-0983da07-5662-44a3-ae2b-bacb93483c15.png">
+    <img width="380" alt="correlation" src="https://user-images.githubusercontent.com/114060781/202558137-0983da07-5662-44a3-ae2b-bacb93483c15.png">
 
     
 3. **Definition of star score**
