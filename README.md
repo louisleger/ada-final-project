@@ -26,9 +26,11 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 
 ## Methods:
 1. **Data pre-processing**
-    - The Data_Cleaning.ipynb file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. The output is a CSV file with all the relevant information needed as can be seen in the following table:
+    - The Data_Cleaning.ipynb file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. The output CSV file contains all the relevant information needed as can be seen in the following table:
 2. **Preliminary analysis on the datasets**
-    - A preliminary analysis was initially done on a single actor in this case Leonardo DiCaprio, to look into the viability and the completeness of the dataset for the purpose we intended to see. For that a look was taken at hoq the number of appearances and 
+    - A preliminary analysis is done on single actors to look into the viability and the completeness of the dataset for the purpose we intended to see and to investigate the correlation between different parameters.
+    
+    
 3. **Definition of star score**
     - The star score will be built on revenues and IMDb scores of the actors. This will be done through using the average logarithm of the profits (Revenue-budget)SHOULD WE MAYBE USE RELATIVE PROFIT (rEVENUE-bUDGET)/BUDGET up to the actor's last appearance, and the average of the logarithm of the scores. This is done due to the heavy-tailed nature of both the revenues and the ratings. The IMDb scores are also normalized by the number of votes as that is an important potential confounder to take into account when using scores (This is done through a min-max scaling of the logarithem of the votes). This will in a similar manner be done to the directors as well.
 4. **Utilizing the star score to assess the distribution over different actor experiences and genders**
