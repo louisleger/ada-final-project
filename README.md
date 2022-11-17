@@ -21,15 +21,17 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 1. [Inflation conversion factor dataset](https://liberalarts.oregonstate.edu/spp/polisci/faculty-staff/robert-sahr/inflation-conversion-factors-years-1774-estimated-2024-dollars-recent-years/individual-year-conversion-factor-table-0): dataset with the yearly inflation correction factor based on the average of inflation estimates by the Office of Management and Budget (OMB) and the Congressional Budget Office (CBO);
 2. [IMDb dataset](https://datasets.imdbws.com/): dataset with IMDb movie ratings as an additional metric for the measurement of movie success. We use:
     - 'title.basics.tsv' and 'title.ratings.tsv'to obtain the ratings and the number of votes for the movies;
+3. [Wikidata dataset](https://www.wikidata.org/): as we are also including the budgets of the movies to complement and make more sense of the revenues, the Wikidata dataset is used with the queries being carried out using SPARQL, the results of the query can be found in the Wikidata_query.json file.
 4. [The Movies Dataset - Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset): the dataset is used to import budgets for the movies. This allows to take into account the profits instead of the pure revenues for the evaluation of the star score.
 
 ## Methods:
 1. **Data pre-processing**
     - The Data_Cleaning.ipynb file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. The output CSV file contains all the relevant information needed as can be seen in the following table:
-    
 2. **Preliminary analysis on the datasets**
     - A preliminary analysis is done on single actors to look into the viability and the completeness of the dataset for the purpose we intended to see and to investigate the correlation between different parameters.
-    
+<p align="center">
+    <img width="380" alt="correlation" src="https://user-images.githubusercontent.com/114060781/202558137-0983da07-5662-44a3-ae2b-bacb93483c15.png">
+
     
 3. **Definition of star score**
     - The star score will be built on revenues and IMDb scores of the actors. This will be done through using the average logarithm of the profits (Revenue-budget)SHOULD WE MAYBE USE RELATIVE PROFIT (rEVENUE-bUDGET)/BUDGET up to the actor's last appearance, and the average of the logarithm of the scores. This is done due to the heavy-tailed nature of both the revenues and the ratings. The IMDb scores are also normalized by the number of votes as that is an important potential confounder to take into account when using scores (This is done through a min-max scaling of the logarithem of the votes). This will in a similar manner be done to the directors as well.
@@ -69,5 +71,5 @@ Further dataset exploration
 | --- | ----------- |
 | Gabriele Furlan | Text |
 | Isaac Battles | Text |
-| Louis-Alexandre Leger | Text |
+| Louise | Text |
 | Nawar Allabban | Text |
