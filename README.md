@@ -69,5 +69,5 @@ Further dataset exploration
 | --- | ----------- |
 | Gabriele Furlan | Text |
 | Isaac Battles | Text |
-| Louise | Text |
+| Louis-Alexandre Leger | Text |
 | Nawar Allabban | Text |
