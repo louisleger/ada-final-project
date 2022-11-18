@@ -18,15 +18,24 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
     - Are there similarities between the actors' and directors' influence on movies?
 
 ## Additional Datasets:
-1. [Inflation conversion factor dataset](https://liberalarts.oregonstate.edu/spp/polisci/faculty-staff/robert-sahr/inflation-conversion-factors-years-1774-estimated-2024-dollars-recent-years/individual-year-conversion-factor-table-0): dataset with the yearly inflation correction factor based on the average of inflation estimates by the Office of Management and Budget (OMB) and the Congressional Budget Office (CBO);
+1. [Inflation conversion factor dataset](https://liberalarts.oregonstate.edu/spp/polisci/faculty-staff/robert-sahr/inflation-conversion-factors-years-1774-estimated-2024-dollars-recent-years/individual-year-conversion-factor-table-0): dataset with the yearly inflation correction factor based on the average of inflation estimates by the Office of Management and Budget (OMB) and the Congressional Budget Office (CBO). This can be found in inflation_correction.csv;
 2. [IMDb dataset](https://datasets.imdbws.com/): dataset with IMDb movie ratings as an additional metric for the measurement of movie success. We use:
     - 'title.basics.tsv' and 'title.ratings.tsv'to obtain the ratings and the number of votes for the movies;
-3. [Wikidata dataset](https://www.wikidata.org/): as we are also including the budgets of the movies to complement and make more sense of the revenues, the Wikidata dataset is used with the queries being carried out using SPARQL, the results of the query can be found in the Wikidata_query.json file.
-4. [The Movies Dataset - Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset): the dataset is used to import budgets for the movies. This allows to take into account the profits instead of the pure revenues for the evaluation of the star score.
+3. [The Movies Dataset - Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset): the dataset is used to import budgets for the movies. This allows us to take into account the profits instead of pure revenues for the evaluate the star score, cutting out a potential confounder. This can be found in kaggle_movies_metadata.csv in the data directory;
 
 ## Methods:
 1. **Data pre-processing**
-    - The 'Data_Cleaning.ipynb' file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. **The output CSV file contains all the relevant information needed as can be seen in the following table**:
+    - The 'Data_Cleaning.ipynb' file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. **The output CSV files, profit_data.csv and rating_no_budget_data.csv with the only difference between the two being the movie budget column to assess the impact of the confounder, which contains all the relevant information needed. A sample of profit_data.csv can be seen in the following table**:
+    
+||Actor_name|Actor_gender|Actor_date_of_birth|Movie_name|budget|Movie_release_date|Movie_box_office_revenue|averageRating|numVotes|
+| --- | ----------- | ----------- |----------- |----------- |----------- |----------- |----------- |----------- |----------- |
+|0|Wanda De Jesus|F|1958-08-26|Ghosts of Mars|28000000|2001-08-24|14010832.0|6.4|55259|
+|1|Natasha Henstridge|F|1974-08-15|Ghosts of Mars|28000000|2001-08-24|14010832.0|6.4|55259|
+|:|:|:|:|:|:|:|:|:|:|
+
+
+
+
 2. **Preliminary analysis on the datasets**
     - A preliminary analysis ('Data_Exploration.ipynb' file) is done on single actors to look into the viability and the completeness of the dataset for the purpose we intended to see and to investigate the correlation between different parameters.
 <p align="center">
