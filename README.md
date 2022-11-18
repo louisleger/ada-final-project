@@ -30,7 +30,6 @@ The 'Data_Cleaning.ipynb' file is used to clean up and merge the data sets menti
 | --- | ----------- | ----------- |----------- |----------- |----------- |----------- |----------- |----------- |----------- |
 |0|Wanda De Jesus|F|1958-08-26|Ghosts of Mars|28000000|2001-08-24|14010832.0|6.4|55259|
 |1|Natasha Henstridge|F|1974-08-15|Ghosts of Mars|28000000|2001-08-24|14010832.0|6.4|55259|
-|:|:|:|:|:|:|:|:|:|:|
 
 2. **Preliminary analysis on the datasets:**
 A preliminary analysis in the 'Data_Exploration.ipynb' file is done on single actors to look into the completeness of the dataset and to investigate the correlation between different parameters to assess the viability of the idea we had in mind. As an example, the revenues and experience (measured in terms of number of appearances) of Leonardo DiCaprio show a positive linear correlation:
