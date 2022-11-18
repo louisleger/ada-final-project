@@ -66,7 +66,7 @@ Ultimately, after star scores are assigned to all actors (and similarly director
 **Week 14:** Submission of milestone 3
 
 ## Organization Within the Team:
-Teammates will collaborate together on each part of the project, even if then core of the tasks will be divided as shown below.
+Teammates will collaborate together on each part of the project, even if the core of the tasks will be divided as shown below.
      
 | Team Member | Task |
 | --- | ----------- |
