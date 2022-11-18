@@ -26,9 +26,9 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 
 ## Methods:
 1. **Data pre-processing**
-    - The Data_Cleaning.ipynb file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. The output CSV file contains all the relevant information needed as can be seen in the following table:
+    - The 'Data_Cleaning.ipynb' file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. **The output CSV file contains all the relevant information needed as can be seen in the following table**:
 2. **Preliminary analysis on the datasets**
-    - A preliminary analysis is done on single actors to look into the viability and the completeness of the dataset for the purpose we intended to see and to investigate the correlation between different parameters.
+    - A preliminary analysis ('Data_Exploration.ipynb' file) is done on single actors to look into the viability and the completeness of the dataset for the purpose we intended to see and to investigate the correlation between different parameters.
 <p align="center">
     <img width="380" alt="correlation" src="https://user-images.githubusercontent.com/114060781/202558137-0983da07-5662-44a3-ae2b-bacb93483c15.png">
 
