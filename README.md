@@ -24,8 +24,7 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 
 1. **Data pre-processing:**
 The 'Data_Cleaning.ipynb' file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. The output CSV files 'profit_data.csv' and 'rating_no_budget_data.csv' differ by the movie budget column, which allows to profits. A sample of 'profit_data.csv' can be seen in the following table:
-    
-    'profit_data.csv'
+
 ||Actor_name|Actor_gender|Actor_date_of_birth|Movie_name|budget|Movie_release_date|Movie_box_office_revenue|averageRating|numVotes|
 | --- | ----------- | ----------- |----------- |----------- |----------- |----------- |----------- |----------- |----------- |
 |0|Wanda De Jesus|F|1958-08-26|Ghosts of Mars|28000000|2001-08-24|14010832.0|6.4|55259|
