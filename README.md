@@ -34,8 +34,10 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 
     
 3. **Definition of star score**
-    - The star score will be built on revenues and IMDb scores of the actors. This will be done through using the average logarithm of the profits (Revenue-budget)SHOULD WE MAYBE USE RELATIVE PROFIT (rEVENUE-bUDGET)/BUDGET up to the actor's last appearance, and the average of the logarithm of the scores. This is done due to the heavy-tailed nature of both the revenues and the ratings. The IMDb scores are also normalized by the number of votes as that is an important potential confounder to take into account when using scores (This is done through a min-max scaling of the logarithem of the votes). This will in a similar manner be done to the directors as well.
+    - The star score is built on revenues and IMDb scores of the actors. This is done by using the average logarithm of the revenues up to the actor's last appearance, and the average of the logarithm of the scores. This is done due to the heavy-tailed nature of both the revenues and the ratings. The IMDb scores are also normalized by the number of votes as that is an important potential confounder to take into account when using scores (done through a min-max scaling of the logarithm of the votes). This will in a similar manner be done to the directors as well.
+
 4. **Utilizing the star score to assess the distribution over different actor experiences and genders**
+    **TO BE REVIEWED**
  
 5. **Prediction of future movies success based on regression model**
     - Once star scores are assigned to all actors (and similarly directors afterwards), a predictive model will be built around it based on the number of appearances of actors as well as their gender
