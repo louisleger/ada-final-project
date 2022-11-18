@@ -65,14 +65,11 @@ Week 13: Applying prior assesment to directors, and completing the data story
 Week 14: Submission of milestone 3
 
 ## Organization Within the Team:
-
-Writing the text of the datastory
-
-Building the website
-
+Teammates will collaborate together on each part of the project, even if then core of the tasks will be divided as shown below.
+     
 | Team Member | Task |
 | --- | ----------- |
 | Gabriele Furlan | Regression analysis and predictive model |
 | Isaac Battles | Analysis on the growth of actresses over time |
 | Louis-Alexandre Leger | Formulation and Refinement of the Star Score, Clustering actors and directors data points |
-| Nawar Allabban | Bother people |
+| Nawar Allabban | Writing the text of the datastory, Building the website |
