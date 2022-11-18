@@ -9,7 +9,8 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 
 - How much does the choice of actor impact movie success?
     - Is the 'star score' a significant metric to assess an actor influence of the success of a movie?
-    - Are there any gender biases in the choice of actors?
+    - Does our dataset corroborate the star system and do star actors have a significant effect on smaller budget movies ?
+    - Are there any gender biases in the choice of actors for the success of movies?
     - How does the star score of an actor evolve over time?
     - What will be the success of future movies based on the selected actors?
     - Are there similarities between the actors' and directors' influence on movies?
