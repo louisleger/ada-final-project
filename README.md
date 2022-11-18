@@ -26,8 +26,6 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
     - A preliminary analysis using the'Data_Exploration.ipynb' file is done on single actors to look into the viability and the completeness of the dataset for the purpose we intended to see and to investigate the correlation between different parameters to assess the viability of the idea we had in mind. To do this we took a look at a single actor to start, "Leonardo DiCaprio". To begin with, looking at his revnues as his experience (measured in terms of number of appearances) varried one can see a clear trend showing a positive effect:
 <p align="center">
     <img width="380" alt="correlation" src="https://user-images.githubusercontent.com/114060781/202558137-0983da07-5662-44a3-ae2b-bacb93483c15.png">
-
-A look was then taken at other factors besides actor experience, such as gender ratios and movie runtimes, and indeed 
     
 2. **Data pre-processing**
     - The 'Data_Cleaning.ipynb' file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. The output CSV files 'profit_data.csv' and 'rating_no_budget_data.csv' with the only difference between the two being the movie budget column to assess the impact of the confounder, which contains all the relevant information needed. A sample of 'profit_data.csv' can be seen in the following table:
