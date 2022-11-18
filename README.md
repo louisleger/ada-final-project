@@ -3,7 +3,6 @@ Isaac Battles, Gabriele Furlan, Nawar Allabban, Louis-Alexandre Leger
 
 ## Abstract:
 
-The star system has started in Hollywood in the 1920s with the goal of exploiting the image of actors to promote movies and generate publicity. The project aims at quantifying the impact of actors on movie success and how this varies along their career, through the definition of a 'star score' metric, associated with revenue and movie ratings. The success of movies may not only rely on the experience of actors and their star score, as it may also depend on the gender distribution in the cast. The coupling of these factors can express the benefit of choosing one actor over another one. By conducting a regression analysis on the dataset, we will quantify the contribution of different parameters and train a model to predict the success of a future movie depending on the actors starring in it. This would also be done in a similar manner to directors. 
 
 
 ## Research Questions:
