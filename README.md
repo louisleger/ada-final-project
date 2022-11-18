@@ -1,3 +1,4 @@
+<img width="431" alt="Capture" src="https://user-images.githubusercontent.com/114060536/202744875-e3de5fc9-cf41-4c24-a6fb-189c5ebf4777.PNG">
 ## Authors:
 Isaac Battles, Gabriele Furlan, Nawar Allabban, Louis-Alexandre Leger
 
@@ -45,8 +46,8 @@ The star system has started in Hollywood in the 1920s with the goal of exploitin
      The star score is built on revenues and IMDb scores of the actors. This is done by using the average logarithm of the revenues up to the actor's last appearance, and the average of the logarithm of the scores. This is done due to the heavy-tailed nature of both the revenues and the ratings. The IMDb scores are also normalized by the number of votes as that is an important potential confounder to take into account when using scores (done through a min-max scaling of the logarithm of the votes). Further detail on this star score can be found in the 'star_score.ipynb' file.
     
     This is done on the all the actors remaining from the filtered datasets. An interesting finding shows that the star score follow a skew normal distribution, with parameters= TO BE ADDED as can be seen below:
-    
-    INSERT FIGURE
+ <p align="center">   
+    <img width="431" alt="Capture" src="https://user-images.githubusercontent.com/114060536/202744875-e3de5fc9-cf41-4c24-a6fb-189c5ebf4777.PNG">
     
     This will in a similar manner be done to the directors as well.
 
