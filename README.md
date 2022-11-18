@@ -43,7 +43,7 @@ The star scores follow a skewed normal distribution, with mean equal to 3.67, as
  <p align="center">   
     <img width="431" alt="Capture" src="https://user-images.githubusercontent.com/114060536/202744875-e3de5fc9-cf41-4c24-a6fb-189c5ebf4777.PNG">
     
-    This will in a similar manner be done to the directors as well.
+This will in a similar manner be done to the directors as well.
 
 4. **Utilizing the star score to assess the distribution over different actor experiences and genders:**
 The star score distribution over different genres will be computed, given that the gender of an actor could potentially influence their impact on a movie. Branching out from this point, one could look at the same statistic after discritizing the data into decades for example, to assess its evolution over time. 
