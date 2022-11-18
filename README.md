@@ -22,12 +22,12 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 
 ## Methods:
 
-1. **Preliminary analysis on the datasets**
+1. **Preliminary analysis on the datasets:**
 A preliminary analysis using the'Data_Exploration.ipynb' file is done on single actors to look into the viability and the completeness of the dataset for the purpose we intended to see and to investigate the correlation between different parameters to assess the viability of the idea we had in mind. To do this we took a look at a single actor to start, "Leonardo DiCaprio". To begin with, looking at his revnues as his experience (measured in terms of number of appearances) varried one can see a clear trend showing a positive effect:
 <p align="center">
     <img width="380" alt="correlation" src="https://user-images.githubusercontent.com/114060781/202558137-0983da07-5662-44a3-ae2b-bacb93483c15.png">
     
-2. **Data pre-processing**
+2. **Data pre-processing:**
 The 'Data_Cleaning.ipynb' file is used to clean up and merge the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values for relevant variables in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database. The output CSV files 'profit_data.csv' and 'rating_no_budget_data.csv' with the only difference between the two being the movie budget column to assess the impact of the confounder, which contains all the relevant information needed. A sample of 'profit_data.csv' can be seen in the following table:
     
 ||Actor_name|Actor_gender|Actor_date_of_birth|Movie_name|budget|Movie_release_date|Movie_box_office_revenue|averageRating|numVotes|
@@ -37,7 +37,7 @@ The 'Data_Cleaning.ipynb' file is used to clean up and merge the data sets menti
 |:|:|:|:|:|:|:|:|:|:|
 
 
-3. **Definition of star score**
+3. **Definition of star score:**
 The star score is built on revenues and IMDb scores of the actors. This is done by using the average logarithm of the revenues up to the actor's last appearance, and the average of the logarithm of the scores. This is done due to the heavy-tailed nature of both the revenues and the ratings. The IMDb scores are also normalized by the number of votes as that is an important potential confounder to take into account when using scores (done through a min-max scaling of the logarithm of the votes). Further detail on this star score can be found in the 'star_score.ipynb' file.
     
 This is done on the all the actors remaining from the filtered datasets. An interesting finding shows that the star score follow a skew normal distribution, with parameters= TO BE ADDED as can be seen below:
@@ -46,10 +46,10 @@ This is done on the all the actors remaining from the filtered datasets. An inte
     
     This will in a similar manner be done to the directors as well.
 
-4. **Utilizing the star score to assess the distribution over different actor experiences and genders**
+4. **Utilizing the star score to assess the distribution over different actor experiences and genders:**
 The star score distribution over different genre's can also be found as shown in the box plot below, showing that the gender of an actor could potentialy influence their impact on a movie even in modern times. Branching out from this point, one could look at the same statistic after discritizing the data into decades for example, to assess its evolution over time. 
     
-5. **Prediction of future movies success based on regression model**
+5. **Prediction of future movies success based on regression model:**
 Ultimately, once star scores are assigned to all actors (and similarly directors afterwards), a predictive model will be built around it based on the number of appearances of actors as well as their gender, and the potential genres they appeared in. Such a tool would be extremely powerful as it would give production companies an initial prediction on what actors and directors to go for based on how much impact the model outputs.
 
 ## Proposed Timeline:
