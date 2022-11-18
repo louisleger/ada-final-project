@@ -39,7 +39,6 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
 |:|:|:|:|:|:|:|:|:|:|
 
 
-    
 3. **Definition of star score**
      The star score is built on revenues and IMDb scores of the actors. This is done by using the average logarithm of the revenues up to the actor's last appearance, and the average of the logarithm of the scores. This is done due to the heavy-tailed nature of both the revenues and the ratings. The IMDb scores are also normalized by the number of votes as that is an important potential confounder to take into account when using scores (done through a min-max scaling of the logarithm of the votes). Further detail on this star score can be found in the 'star_score.ipynb' file.
     
@@ -56,11 +55,7 @@ Have you ever watched a movie because an actor was starring in it? Good actors l
     
 5. **Prediction of future movies success based on regression model**
     Ultimately, once star scores are assigned to all actors (and similarly directors afterwards), a predictive model will be built around it based on the number of appearances of actors as well as their gender, and the potential genres they appeared in. Such a tool would be extremely powerful as it would give production companies an initial prediction on what actors and directors to go for based on how much impact the model outputs.
-8. **Investigation of movies success dependence on directors and writers and comparison with actors**.
-    - Once the analysis is complete on actors, this can be done in a similar manner with directors, allowing for a more
-    
-    
-    
+
 ## Proposed Timeline:
 
 Week 9: Submission of milestone 2, and finishing the preliminary analysis of the data along with tests of the methods mentioned above on a small sample from the databases.
