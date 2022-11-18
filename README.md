@@ -68,17 +68,11 @@ Week 14: Submission of milestone 3
 
 Writing the text of the datastory
 
-Formulation and Refinement of the Star Score
-
 Building the website
-
-Training and tuning the predictive model
-
-Further dataset exploration
 
 | Team Member | Task |
 | --- | ----------- |
-| Gabriele Furlan | Text |
-| Isaac Battles | Text |
-| Louise | Text |
-| Nawar Allabban | Text |
+| Gabriele Furlan | Regression analysis and predictive model |
+| Isaac Battles | Analysis on the growth of actresses over time |
+| Louis-Alexandre Leger | Formulation and Refinement of the Star Score, Clustering actors and directors data points |
+| Nawar Allabban | Bother people |
