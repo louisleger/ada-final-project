@@ -1,4 +1,3 @@
-<img width="431" alt="Capture" src="https://user-images.githubusercontent.com/114060536/202744875-e3de5fc9-cf41-4c24-a6fb-189c5ebf4777.PNG">
 ## Authors:
 Isaac Battles, Gabriele Furlan, Nawar Allabban, Louis-Alexandre Leger
 
