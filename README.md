@@ -52,15 +52,15 @@ The star score distribution over different genres will be computed, given that t
 Ultimately, after star scores are assigned to all actors (and similarly directors afterwards), a predictive model will be built around it based on the number of appearances of actors as well as their gender, and the potential genres they appeared in. Such a tool could be potentially powerful as it would give production companies an initial prediction on what actors and directors to go for based on the model output.
 
 ## Proposed Timeline:
-**Week 9:** Submission of milestone 2, and finishing the preliminary analysis of the data along with tests of the methods mentioned above on a small sample from the databases.
+**Week 9:** Submission of milestone 2 and finishing the preliminary analysis of the data along with tests of the methods mentioned above on a small sample from the databases;
 
-**Week 10:** Expansion of the analysis to the complete dataset of actors
+**Week 10:** Expansion of the analysis to the complete dataset of actors;
 
-**Week 11:** Building a predictive model involving actor gender and number of appearances
+**Week 11:** Building a predictive model involving actor gender and number of appearances;
 
-**Week 12:** Starting a draft of the data story, and the begining of the development of the web interface
+**Week 12:** Starting a draft of the data story and the begining of the development of the web interface;
 
-**Week 13:** Applying prior assesment to directors, and completing the data story
+**Week 13:** Applying prior assessment to directors and completing the data story;
 
 **Week 14:** Submission of milestone 3
 
