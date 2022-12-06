@@ -1,4 +1,4 @@
-# Title: The Star System
+# The Star System
 
 ## Authors:
 Isaac Battles, Gabriele Furlan, Nawar Allabban, Louis-Alexandre Leger
