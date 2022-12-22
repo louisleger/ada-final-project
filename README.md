@@ -14,9 +14,10 @@ Successful actors are able to make a living out of their acting career, and even
 
 ## Research questions
 ### Which are the possible confounders to be tackled in assessing the characteristics of successful actors?
-* What defines the success of an actor?
-* How are movie ratings and successful actors related between each other?
-* How are networks of actors formed and do acting pairs show disparity in their success metrics?
+- What defines the success of an actor?
+- How are movie ratings and successful actors related between each other?
+- How are networks of actors formed and do acting pairs show disparity in their success metrics?
+- Are some actor's IMDB grades benefitting from acting with high profile actors?
 
 ## Additional Datasets:
 1. [IMDb dataset](https://datasets.imdbws.com/): dataset with IMDb movie ratings as an additional metric for the measurement of movie success. We use:
