@@ -53,7 +53,10 @@ An observational study is conducted to try to quantify the effect that such conf
     <img width="800" alt="correlation" src="https://user-images.githubusercontent.com/114060781/208999090-1d7485d2-9904-4f97-af5c-bb05d386575e.png">
 
 5. **Piggybacking actors:**
-Going a step further with the study, we aim to tackle the fact that actors in the same movie cast benefit from the same movie ratings, even if they are less impactful in the movie. To do this, we compare career average ratings of casts of actors aiming to identify if one is 'piggybacking' on the other.
+Going a step further with the study, we aim to tackle the fact that actors in the same movie cast benefit from the same movie ratings, even if they are less impactful in the movie. To do this, we compare career average ratings of casts of actors aiming to identify if one is 'piggybacking' on the other. This is done through constructing a Bipartite graph of actors-movies which is then projected onto the actors of the treatment set, allowing for the identification of actors who appeared together the most. For those pairs, Mann-Whitney U tests where conducted to compare the average grade rating of their movies over their individual careers (excluding movies together). If the null hypothesis can be rejected one can infer that one of the actor is piggybacking of the other. 
+
+<p align="center">
+![manhattanplt](https://user-images.githubusercontent.com/114060536/209091198-2157293a-e2c7-4cc8-ad11-6de2a370b53b.png)
 
 ## Timeline
 **Week 9:** Submission of milestone 2 and finishing the preliminary analysis of the data along with tests of the methods mentioned above on a small sample from the databases;
