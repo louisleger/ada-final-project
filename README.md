@@ -1,5 +1,6 @@
 # The Star System
 The link to the data story is: https://gabf13.github.io/earthnet-website/ .
+The notebook 'Milestone3.ipynb', containing the jupyter notebook of the data story, is contained into the 'src' folder.
 
 ## Authors:
 Nawar Allabban, Isaac Battles, Gabriele Furlan, Louis-Alexandre Leger
@@ -21,6 +22,7 @@ Successful actors are able to make a living out of their acting career, and even
     -  'title.ratings.tsv' to obtain the ratings and the number of votes for each movie;
     -  'title.akas.tsv.gz' to extract the regions associated with each movie;
     -  'title.crew.tsv.gz' to get the names of the directors and their respective movies.
+Given the massive size of the IMDb datasets and the GitHub upload limitations, only the cleaned datasets are provided into the 'data' folder.
 
 ## Methods:
 
@@ -63,7 +65,6 @@ Going a step further with the study, we aim to tackle the fact that actors in th
 
 **Week 10:** Expansion of the analysis to the complete dataset of actors;
 
-
 **Week 11:** Discuss the main counfounders in actors job assignment and start building up the observational study;
 
 **Week 12:** Conduct the observational study and start a draft of the data story;
@@ -83,4 +84,4 @@ The tasks of the project were mainly divided as shown below.
 | Louis-Alexandre Leger | Detailed analysis of confounding factors in actors job assignment |
     
     
-Acknowledgment to our tutor Martin Josifoski for the precious advice.
+Acknowledgment to our supervisor Martin Josifoski for the precious advice.
