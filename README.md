@@ -25,7 +25,10 @@ Successful actors are able to make a living out of their acting career, and even
 ## Methods:
 
 1. **Data pre-processing:**
-This part consisted in the clean up and merging of the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database and make it suited to our interests and scopes. The output csv files FILE NAMES contain FILE CONTENT
+This part consisted in the clean up and merging of the data sets mentioned above into a single working dataframe for the analysis. This is particularly relevant due to the large amount of NaN values in the movie metadata and character metadata files of the CMU database, and to reduce the size of the massive IMDb database and make it suited to our interests and scopes. The output csv files are:
+
+- **'actors_us.csv'**, containing the cleaned list of actors from the US region, before the matching process;
+- **'balanced_df.csv'**, containing the balanced dataset of actors, after the propensity score matching.
 
 2. **Data exploration and evaluation of interesting trends:**
 The available data are explored to identify patterns, trends, and relationships in the data, and to understand the overall structure and distribution of the data. Specifically, we used methods such as:
