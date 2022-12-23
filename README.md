@@ -1,5 +1,6 @@
 # The Star System
 The link to the data story is: https://gabf13.github.io/earthnet-website/ .
+
 The notebook 'Milestone3.ipynb', containing the jupyter notebook of the data story, is contained into the 'src' folder.
 
 ## Authors:
